@@ -5,9 +5,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 min-h-screen bg-background p-8">
+    <div className="flex flex-col flex-1">
       <header className="mb-8">
-        <h1 className="text-4xl font-bold text-foreground mb-2">Automaton Dashboard</h1>
+        <h1 className="text-3xl font-bold text-foreground mb-2">Overview</h1>
         <p className="text-muted-foreground">System monitoring and control center</p>
       </header>
 

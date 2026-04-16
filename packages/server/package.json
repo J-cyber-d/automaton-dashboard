@@ -7,21 +7,22 @@
     "build": "tsup src/index.ts --format esm"
   },
   "dependencies": {
-    "express": "^4.21.0",
     "better-sqlite3": "^11.5.0",
-    "ws": "^8.18.0",
-    "cors": "^2.8.5",
     "chokidar": "^4.0.0",
-    "dotenv": "^16.4.5"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.0",
     "@types/better-sqlite3": "^7.6.11",
-    "@types/ws": "^8.5.12",
     "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
     "@types/node": "^22.7.0",
-    "tsx": "^4.19.0",
+    "@types/ws": "^8.5.12",
+    "node-gyp": "^12.2.0",
     "tsup": "^8.3.0",
+    "tsx": "^4.19.0",
     "typescript": "^5.6.0"
   }
 }
