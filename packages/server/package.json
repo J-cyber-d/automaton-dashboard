@@ -1,7 +1,21 @@
 {
-  "name": "server",
+  "name": "automaton-dashboard",
   "version": "1.0.0",
+  "description": "Web dashboard for monitoring Automaton agents",
   "type": "module",
+  "bin": {
+    "automaton-dashboard": "./bin/cli.js"
+  },
+  "files": [
+    "dist/",
+    "bin/"
+  ],
+  "keywords": [
+    "automaton",
+    "dashboard",
+    "agent",
+    "monitoring"
+  ],
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsup src/index.ts --format esm"

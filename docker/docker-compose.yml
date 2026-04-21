@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  dashboard:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "4820:4820"
+    volumes:
+      - ${HOME}/.automaton:/data:ro
+    environment:
+      - DASHBOARD_PORT=4820
+      - AUTOMATON_DB_PATH=/data/state.db
+    restart: unless-stopped

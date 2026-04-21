@@ -2,9 +2,11 @@
   "name": "automaton-dashboard",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter web dev\"",
-    "build": "pnpm --filter server build && pnpm --filter web build"
+    "dev": "concurrently \"pnpm --filter automaton-dashboard dev\" \"pnpm --filter web dev\"",
+    "build": "pnpm --filter web build && pnpm --filter automaton-dashboard build",
+    "build:release": "pnpm --filter web build && node scripts/copy-static.js && pnpm --filter automaton-dashboard build"
   },
   "devDependencies": {
     "concurrently": "^9.0.0",
